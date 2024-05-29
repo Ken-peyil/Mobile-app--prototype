@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .comment {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>News</h1>
+        <a href="index.html">Back to Home</a>
+    </div>
+    <div class="section">
+        <h2>News Item 1</h2>
+        <p>Details about news item 1...</p>
+    </div>
+    <div class="section">
+        <h2>News Item 2</h2>
+        <p>Details about news item 2...</p>
+    </div>
+    <div class="section">
+        <h2>Comments</h2>
+        <form id="commentForm">
+            <div class="form-group">
+                <label for="comment">Add a comment</label>
+                <input type="text" id="comment" name="comment">
+            </div>
+            <button type="button" class="button" onclick="addComment()">Submit</button>
+        </form>
+        <div id="comments">
+            <!-- Comments will be added here -->
+        </div>
+    </div>
+
+    <script>
+        function addComment() {
+            const commentText = document.getElementById('comment').value;
+            const commentsDiv = document.getElementById('comments');
+            const newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.textContent = commentText;
+            commentsDiv.appendChild(newComment);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .comment {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>News</h1>
+        <a href="index.html">Back to Home</a>
+    </div>
+    <div class="section">
+        <h2>News Item 1</h2>
+        <p>Details about news item 1...</p>
+    </div>
+    <div class="section">
+        <h2>News Item 2</h2>
+        <p>Details about news item 2...</p>
+    </div>
+    <div class="section">
+        <h2>Comments</h2>
+        <form id="commentForm">
+            <div class="form-group">
+                <label for="comment">Add a comment</label>
+                <input type="text" id="comment" name="comment">
+            </div>
+            <button type="button" class="button" onclick="addComment()">Submit</button>
+        </form>
+        <div id="comments">
+            <!-- Comments will be added here -->
+        </div>
+    </div>
+
+    <script>
+        function addComment() {
+            const commentText = document.getElementById('comment').value;
+            const commentsDiv = document.getElementById('comments');
+            const newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.textContent = commentText;
+            commentsDiv.appendChild(newComment);
+        }
+    </script>
+</body>
+</html>
